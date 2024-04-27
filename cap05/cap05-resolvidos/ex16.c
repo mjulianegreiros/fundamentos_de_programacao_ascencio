@@ -14,7 +14,7 @@ int main()
         printf("\ndigite a altura do triângulo: ");
         scanf("%f" , &altura);
     } 
-    while (base==0 || altura==0);
+    while (base!=0 && altura!=0);
     
     area=(base*altura)/2;
 
