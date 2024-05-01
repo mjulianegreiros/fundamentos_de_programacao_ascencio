@@ -3,9 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <locale.h> //biblioteca que inclui acentos graficos da lingua portuguesa
 
 int main()
 {
+    setlocale(LC_ALL , "Portuguese"); //ativando a biblioteca
+    
     int custoestq , barato=0 , normal=0 , caro=0 , mediarefig , cont , mpf ,mepf;
     float preco , impo , precofinal , imptotal=0 , mediaimp , maiorpf , menorpf;
     char refrig , categ;
@@ -72,7 +75,7 @@ int main()
         }
         mediarefig=mediarefig+custoestq;
         mediaimp=mediaimp+impo;
-        if(cont=1)
+        if(cont==1)
         {
             maiorpf=precofinal;
             menorpf=precofinal;
