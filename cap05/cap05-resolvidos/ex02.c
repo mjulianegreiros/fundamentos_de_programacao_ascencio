@@ -1,4 +1,5 @@
-/*enunciado da questão seá postado posteriormente*/
+/*Calcule:
+ * E = 1 + 1/1! + 1/2! + 1/3! + ... + 1/N!*/
 
 #include <stdio.h>
 #include <stdlib.h>

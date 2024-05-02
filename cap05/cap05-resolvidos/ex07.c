@@ -1,4 +1,4 @@
-/*enunciado da questão seá postado posteriormente*/
+
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -10,6 +10,7 @@ int main()
     setlocale(LC_ALL , "Portuguese"); //ativando a biblioteca
     
     int custoestq , barato=0 , normal=0 , caro=0 , mediarefig , cont , mpf ,mepf;
+    int custoestq , barato=0 , normal=0 , caro=0 , mediarefig , cont , mpf ,mepf , q=0;
     float preco , impo , precofinal , imptotal=0 , mediaimp , maiorpf , menorpf;
     char refrig , categ;
     for(cont=1;cont<=12;cont=cont+1)
@@ -76,11 +77,13 @@ int main()
         mediarefig=mediarefig+custoestq;
         mediaimp=mediaimp+impo;
         if(cont==1)
+        if(q==0)
         {
             maiorpf=precofinal;
             menorpf=precofinal;
             mpf=cont;
             mepf=cont;
+            q=1;
         }
         if(precofinal>maiorpf)
         {

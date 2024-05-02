@@ -1,4 +1,4 @@
-/*enunciado da questão seá postado posteriormente*/
+/*Programa para calcular uma expressão númerica.*/
 
 #include <stdio.h>
 #include <stdlib.h>
