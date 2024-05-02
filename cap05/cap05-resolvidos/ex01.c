@@ -13,7 +13,8 @@ Faça um programa que determine o salário atual desse funcionário.*/
 
 int main()
 {
-    int sal=1015 , aum=0,015 , novosal=0 , ano , cont , porcent;
+    float sal=1015 , aum=0.015 , novosal=0 , porcent;
+    int ano , cont;
 
     printf("digite o ano atual: \n");
     scanf("%d" , &ano);
@@ -22,10 +23,11 @@ int main()
     {
         aum = aum * 2;
         porcent=sal*aum;
-        novosal=novosal+porcent;
+        novosal=sal+porcent;
+        sal=novosal;
     }
 
-    printf("o seu salário no ano digitado será: %d" , novosal);
+    printf("o seu salário no ano digitado será: %.2f" , novosal);
 
 
 
