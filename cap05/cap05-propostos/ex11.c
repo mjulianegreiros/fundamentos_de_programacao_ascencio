@@ -7,8 +7,8 @@ PROGRAMA CONTEM BUGS*/
 
 int main()
 {
-    float preco , preco_final_vista  , vlr_parc , preco_final_prazo;
-    int qtd_parc , imp=0;
+    float preco , preco_final_vista  , vlr_parc , preco_final_prazo , imp=0;
+    int qtd_parc;
 
     printf("\nDigite o preço unitário do produto: R$");
     scanf("%f" , &preco);
@@ -20,12 +20,12 @@ int main()
     for(qtd_parc=6;qtd_parc<=60;qtd_parc=qtd_parc+6)
     {
         preco_final_prazo=0;
-        imp=imp+3;
-        preco_final_prazo=preco + ((imp/100)*preco);
+        imp=imp+0.03;
+        preco_final_prazo=preco + (imp*preco);
         vlr_parc=preco_final_prazo/qtd_parc;
-        printf("\n\t-----------------");
+        printf("\n\t-------------------------");
         printf("\n\t PARCELAS - %d\n\t VALOR DA PARCELA - %.2f\n\t PREÇO FINAL - %.2f\n", qtd_parc , vlr_parc , preco_final_prazo);
-        printf("\n\t-----------------");
+        printf("\n\t-------------------------");
     }
     
 
