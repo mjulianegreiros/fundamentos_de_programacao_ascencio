@@ -86,11 +86,11 @@ void mapaOcupacao(int janela[] , int corredor[])
     {
         if (janela[i]==desocupado)
         {
-            printf("\n%d - Desocupado" , janela[i]);
+            printf("\n%d - Desocupado" , i);
         }
         else
         {
-            printf("\n%d - Ocupado" , janela[i]);
+            printf("\n%d - Ocupado" , i);
         }
     }
     
@@ -99,11 +99,11 @@ void mapaOcupacao(int janela[] , int corredor[])
     {
         if(corredor[i]==desocupado)
         {
-            printf("\n%d - Desocupado" , corredor[i]);
+            printf("\n%d - Desocupado" , i);
         }
         else
         {
-            printf("\n%d - Ocupado" , corredor[i]);
+            printf("\n%d - Ocupado" , i);
         }
     }
 }
