@@ -5,7 +5,7 @@
 
 int main()
 {
-    int v1[10] , v2[5] , qtd_par=0 , qtd_impar=0 , i , j , divs , q=0 , k=0;
+    int v1[10] , v2[5] , qtd_par=0 , qtd_impar=0 , i , j , divs , q=0 , k=0 , m=0;
 
     printf("\nPreechendo o vetor 01.\n");
     for(i=0;i<10;i++)
@@ -32,9 +32,13 @@ int main()
 
     int r1[qtd_par]  , r2[qtd_impar];
 
-    for(i=0;i<qtd_par;i++)
+    for(i=0;i<10;i++)
     {
-        r1[i] = 0;
+       if(v1[i]%2==0)
+       {
+            r1[m] = v1[i];
+            m++;
+       } 
     }
 
     for(i=0;i<10;i++)
